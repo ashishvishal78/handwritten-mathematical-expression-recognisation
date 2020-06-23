@@ -8,7 +8,7 @@ import tensorflow as tf
 from preprocess import rescale_segment as rescale_segment
 from preprocess import extract_segments as extract_segments
 
-img = cv2.imread('/Users/prityush/PycharmProjects/xx/Equation data/uu.jpeg', 0)
+img = cv2.imread('C:/Users/DELL/Desktop/ee/Equation data/uu.jpeg', 0)
 #plt.imshow(img, cmap='gray')
 img= cv2.resize(img,(640,480))
 plt.imshow(img.reshape(img.shape[0], img.shape[1]), cmap=plt.cm.Greys)
@@ -46,4 +46,4 @@ for i in range(len(image)):
         #plt.imshow(segments[j].reshape(segments[j].shape[0], segments[j].shape[1]), cmap=plt.cm.Greys)
         plt.show()
 # Saving each equation as numpy file
-np.save('/Users/prityush/PycharmProjects/xx/Equation data/test9.npy', np.array(image))
+np.save('C:/Users/DELL/Desktop/ee/Equation data/uu.npy', np.array(image))

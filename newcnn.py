@@ -1,7 +1,6 @@
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten
 from tensorflow.keras.layers import Conv2D, MaxPooling2D
-# more info on callbakcs: https://keras.io/callbacks/ model saver is cool too.
 from tensorflow.keras.callbacks import TensorBoard
 import pickle
 import time
@@ -61,9 +60,9 @@ for dense_layer in dense_layers:
 
 ver = '1'
 model_json = model.to_json()
-with open("/Users/prityush/PycharmProjects/xx/trained models/PNN_ver{0}.1.json".format(ver), "w") as json_file:
+with open("C:/Users/DELL/Desktop/ee/Equation data/PNN_ver{0}.1.json".format(ver), "w") as json_file:
     json_file.write(model_json)
 # serialize weights to HDF5
-model.save_weights("/Users/prityush/PycharmProjects/xx/trained models/PNN_ver{0}.1.h5".format(ver))
+model.save_weights("C:/Users/DELL/Desktop/ee/Equation data/PNN_ver{0}.1.h5".format(ver))
 print("Saved model to disk")
 

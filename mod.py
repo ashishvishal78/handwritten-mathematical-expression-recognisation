@@ -4,7 +4,7 @@ import os
 import cv2
 from tqdm import tqdm
 
-DATADIR = "/Users/prityush/Desktop/training 3"
+DATADIR = "C:/Users/DELL/Desktop/ee"
 
 CATEGORIES = ['0','1','2','3','4','5','6','7','8','9','+','-','div','times']
 

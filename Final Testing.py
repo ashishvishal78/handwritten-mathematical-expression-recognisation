@@ -25,8 +25,6 @@ eqn_full = [temp1]
 # Loading saved models for prediction
 #path = './trained models/'
 path = './trained models/'
-'''adastage1_ver1,adadigits_ver1, adachars_ver1, rfmodel_ver1, MLP_single_ver1, cnn_ver1 = preprocess.load_models(path,1)
-adastage1_ver2,adadigits_ver2, adachars_ver2, rfmodel_ver2, MLP_single_ver2, cnn_ver2 = preprocess.load_models(path,2)'''
 
 adastage1_ver1,adadigits_ver1, adachars_ver1, rfmodel_ver1, MLP_single_ver1, cnn_ver1 = preprocess.load_models(path,1)
 adastage1_ver2,adadigits_ver2, adachars_ver2, rfmodel_ver2, MLP_single_ver2, cnn_ver2 = preprocess.load_models(path,2)
@@ -84,25 +82,6 @@ for eqns in eqn_full:
         plt.show()
 
         #print('Recognized Expression = ', cnn_pred_ver2)
-        '''b = ''
-        for i in range(len(cnn_pred_ver2)):
-            if (cnn_pred_ver2[i] == 't'):
-                b = b + '*'
-            elif (cnn_pred_ver2[i] == ' '):
-                pass
-            elif (cnn_pred_ver2[i] == 'i'):
-                pass
-            elif (cnn_pred_ver2[i] == 'm'):
-                pass
-            elif (cnn_pred_ver2[i] == 'e'):
-                pass
-            elif (cnn_pred_ver2[i] == 's'):
-                pass
-            elif (cnn_pred_ver2[i] != ' '):
-                b = b + cnn_pred_ver2[i]
-        print('Recognized Expression = ', b)
-
-        print("\nResult =", eval(b))'''
 b=''
 for i in range(len(cnn_pred_ver2)):
     if (cnn_pred_ver2[i] == 't'):
